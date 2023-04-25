@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_alignParentStart="true"
+            android:id="@+id/word_text_view"
+            android:layout_toStartOf="@+id/meaning_text_view"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="كتاب"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/meaning_text_view"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noun"
+            android:id="@+id/type_text_view"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/word_text_view"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
